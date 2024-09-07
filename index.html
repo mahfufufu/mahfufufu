@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<!-- <style>
+  div {
+    border: 3px solid blue;
+    padding: 20px;
+  }
+</style> -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="milestone" content="Portfolio">
+
+  <!-- TODO: Replace this with your title -->
+  <title>Studio Soloarixx</title>
+  <!-- 
+			TODO: Add Bootstrap CSS link tag from: 
+      https://getbootstrap.com/docs/5.2/getting-started/introduction/
+		-->
+
+  <!-- 
+			TODO: Add Bootstrap Icons link tag from: 
+			https://icons.getbootstrap.com/
+			(Remember, the CDN link is towards the bottom of the page!)
+		-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="icon" type="image/x-icon" href="img/sunswirl.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Custom styles (these can extend the default Bootstrap styles) -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+  <!-- TODO: Paste Navbar code and customize links -->
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark py-1">
+    <div class="container">
+      <a href="https://portfolio-project-personal-website-mahfouzafada.coding-for-web-summer-23.repl.co/"
+        class="navbar-brand">
+        <img id="home-icon" src="img/homeicon.png" width="35px">
+      </a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="nav-collapse" class="collapse navbar-collapse">
+        <div class="navbar-nav ms-auto">
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#blog" class="nav-link">Blog</a>
+          <a href="#about-me" class="nav-link">About Me</a>
+          <a href="#my-skills" class="nav-link">My Skills</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero section -->
+  <!-- just going to take some personal liberties and purposefully break some rules of the assignment bc I want this to end up as an actual future portfolio website sooo, hAH! (i've been meaning to do this anyways and now's a perfect time ^_^ -->
+  <header id="hero-section" class="text-center text-light">
+    <!-- BIG HEADING -->
+    <div class="container" id="header-items">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-12">
+          <h1 class="display-2">
+            <img src="img/studiosolarixxlogo.png" width="500px">
+          </h1>
+          <div class="col-12">
+            <h3 id="paragraph">Studio Solo<small>&trade;</small></h3>
+          </div>
+        </div>
+      </div>
+      <nav id="hero-nav">
+        <div id="bg-container">
+          <img src="img/portfolioicon.png" width="200px" class="nav-icon" id="scroll-to-artwork">
+        </div>
+        <div id="bg-container">
+          <img src="img/sunswirl.png" width="200px" class="nav-icon" id="scroll-to-skills">
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Mission/Meet-me section -->
+  <section id="about-me-section">
+    <div class="container" id="about-me">
+      <div id="paragraph">
+        <h1>About Me</h1>
+      </div>
+
+      <div id="mission-section" class="text-center row">
+        <div class="col-sm-12 col-lg-6 col-md-12 x" id="about-me-img">
+          <img id="mission-image" src="img/personapopout.PNG" alt="my persona" width="400px">
+        </div>
+        <div class="col-12 col-sm-12 col-lg-6 y">
+          <p id="paragraph" class="rotateL">Why hello there weary traveler 👾 welcome to my corner of the internet! Aka,,, the
+            UNDERRRGROUND!! <br> Studio Solo was and still is a long-standing dream project of mine, to bringing creativity and entertainment to the world. This is a passion project
+            encompassing
+            many inspirations: video games, animation, art, and music!</p>
+            <p id="paragraph" class="rotateR">My name is Mahfouz, I am a self-taught multi-media artist and animator that
+            specializes
+            in abstract art! I was born in Togo, West Africa and came to the US when I was only 3 years old. I currently
+            attend the University of Maryland at College Park, majoring in computer science. I am a rising 2D animator; storyboard artist; budding programmer; and aspiring writer. I regularly post my
+            artwork and animations @mahfufufu on my Instagram and twitter. I am also on LinkedIn. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artwork -->
+  <section id="artwork-section">
+    <div class="artwork-section" class="backdrop">
+      <h1 style="color:#FFFFFF" id="paragraph">Artwork</h1>
+      <p style="color:#FFFFFF" id="paragraph" class="text-center">Here's some of my BEST artwork and animations!!</p>
+      <div id="mission-section" class="text-center row, backdrop">
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="col-12">
+                <img src="artwork/IMG_5706.jpeg" width="100%" class="mb-4 tape-effect rotate" id="artwork">
+              </div>
+              <!-- Add more images in pairs as needed -->
+              <div class="col-12">
+                <img src="artwork/IMG_1.jpeg" width="100%" class="mb-4 tape-effect" id="artwork">
+              </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+              <img src="artwork/IMG_5707.jpeg" width="100%" class="mb-4 tape-effect" id="artwork">
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+              <img src="artwork/IMG_5708.jpeg" width="100%" class="mb-4 tape-effect rotate" id="artwork">
+
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="row">
+                <div class="col-12">
+                  <img src="artwork/IMG_5709.jpeg" width="100%" class="mb-4 tape-effect rotate" id="artwork">
+                </div>
+                <div class="col-12">
+                  <img src="artwork/IMG_2498.png" width="100%" class="mb-4 tape-effect" id="artwork">
+                </div>
+                <!-- Add more images in pairs as needed -->
+              </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="row">
+                <div class="col-12">
+                  <img src="artwork/IMG_2.jpeg" width="100%" class="mb-4 tape-effect" id="artwork">
+                </div>
+                <div class="col-12">
+                  <img src="artwork/IMG_0953.png" width="100%" class="mb-4 tape-effect rotate" id="artwork">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="row">
+                <div class="col-12">
+                  <img src="artwork/IMG_1254.jpeg" width="100%" class="mb-4 tape-effect rotate" id="artwork">
+                </div>
+                <div class="col-12">
+                  <img src="artwork/IMG_1318.png" width="100%" class="mb-4 tape-effect" id="artwork">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div>
+                <video width="100%" controls>
+                  <source src="Videos/AnimationReel(sd).mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div>
+                <video width="100%" controls>
+                  <source src="Videos/CopyPasteInvert(SD).mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div>
+                <video width="100%" controls>
+                  <source src="Videos/LuckyStarOutOfTouch(SD).mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div>
+                <video width="100%" controls>
+                  <source src="Videos/PaletteChaser(SD).mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div>
+                <video width="100%" controls>
+                  <source src="Videos/YoungGravyLipSynch(SD).mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- You can add more columns as needed -->
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills-section">
+    <div class="container" id="my-skills">
+      <section class="about">
+        <h2 class="about__title">My skills</h2>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h3 class="bi bi-filetype-html text-center"></h3>
+            <p class="text-center">HTML</p>
+            <p class="about__paragraph text-center">
+              Structured modern website content with accessibility and semantics in mind.
+            </p>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h3 class="bi bi-braces text-center"></h3>
+            <p class="text-center">CSS</p>
+            <p class="about__paragraph text-center"">
+              Integrated dynamic web design and experiences, code projects, and web apps.
+            </p>
+          </div>
+
+          <div class=" col-12 col-sm-6 col-lg-3">
+            <h3 class="bi bi-palette text-center"></h3>
+            <p class="text-center">ART</p>
+            <p class="about__paragraph text-center"">
+              Self-taught multi-media artist and 2D animator that specializes in abstract art!
+            </p>
+          </div>
+
+          <div class=" col-12 col-sm-6 col-lg-3">
+            <h3 class="bi bi-bootstrap text-center"></h3>
+            <p class="text-center">BOOTSTRAP</p>
+            <p class="about__paragraph text-center"">
+              Utilized widely popular frameworks and code libraries for responsive web design.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- Contact Section (Personal preference to keep it in footer-->
+  <section id=" contact-section">
+            <div class="container">
+
+            </div>
+      </section>
+
+
+      <!-- Footer section -->
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-1 bg-dark">
+        <div class="col-md-4 d-flex align-items-center" id="span-uniquifier">
+          <span class="text-muted">© 2023 Studio Solo, Mahfouz</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" id="footer-icons">
+          <li class="ms-3">
+            <!-- the target="_blank" effectively opens a new tab instead of just changing the tab ur currently on, in the owlr dof protfolio websites, you never want to have your social links lead AWAY from your personal website -->
+            <a class="text-muted" href="https://twitter.com/mahfufufu?lang=en" target="_blank">
+              <i class="bi bi-twitter" width="24px"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="https://www.instagram.com/mahfufufu/" target="_blank">
+              <i class="bi bi-instagram" width="24px"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="https://www.linkedin.com/in/mahfouz-afada-b96a22195/" target="_blank">
+              <i class="bi bi-linkedin" width="24px"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      // Scroll to artwork section
+      $("#scroll-to-artwork").on("click", function () {
+        $("html, body").animate({
+          scrollTop: $("#artwork-section").offset().top
+        }, 100); // Adjust the duration as needed
+      });
+
+      // Scroll to skills section
+      $("#scroll-to-skills").on("click", function () {
+        $("html, body").animate({
+          scrollTop: $("#skills-section").offset().top
+        }, 100); // Adjust the duration as needed
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>

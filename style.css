@@ -1,0 +1,266 @@
+/* You can add custom CSS and extend Boostrap styles in this file. Remember, Bootstrap is just CSS at the end of the day! */
+
+body {
+  color: black;
+}
+
+#hero-section {
+	background-image: linear-gradient(rgba(0,0,0,.5),rgba(233,51,201,.3)), url("img/Hero.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+  font-family: sans-serif;
+  width: 100%;
+  padding: 10%;
+  position: relative;
+  background-attachment: fixed; /*singlehandeldy takes care of the parallx effect*/
+}
+
+/* Instead of creating id's for every little after-change rule you want to make in css, you could just use descendent selectors and save space with hundreds of unique id's*/
+#hero-section .container {
+  margin-top: 150px;
+}
+
+h1.display-2 img {
+  max-width: 100%;
+  /* sets the maximum width of the logo image to 100%, making it scale proportionately within its parent container (h1.display-2) and does not extend beyond it when the viewport is narrow. (NOOOO MOOOORE WHITESPACE??? FINALLY (took me way too long to figure this out)*/
+}
+
+#artwork {
+  border-radius: 10px;
+  box-shadow: 10px 10px 9px #130f28;
+}
+
+#about-me-img #mission-image {
+  max-width: 100%;
+}
+
+#home-icon {
+  text-shadow: 15px 15px 5px rgb(80, 0, 0);
+}
+
+#hero-nav {
+  display: flex;
+  justify-content: center;
+  /* z-index: 200; */
+}
+
+.nav-icon {
+ /* position relative is what allowed the icon to appear in front of the bg-container */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+#bg-container {
+  display: inline-block;
+  position: relative;
+  margin: 25px;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s, background-color 0.3s;
+  background-color: rgba(255,255,255,0);
+}
+
+#bg-container:hover .nav-icon {
+  transform: scale(1.3);
+}
+
+#bg-container:hover {
+  transform: scale(1.1);
+  background-color: rgba(255,255,255,.3);
+  border-radius: 50%;
+  transform: rotate(10deg);
+  border: dashed gold 3px;
+}
+
+#mission-section {
+  display: flex;
+  flex-direction: horizontal;
+  color: #1f1c24;
+  border-radius: 30px;
+  padding: 30px 0;
+  padding-bottom: 90px;
+}
+
+#about-me-section {
+  background-image: linear-gradient(rgba(250,235,215,1), rgba(255,214,209,0)), url("img/IMG_5710.png");
+  background-size: cover;
+  
+}
+
+.backdrop {
+  backdrop-filter: blur(2px); /* Adjust the blur radius as needed */
+  -webkit-backdrop-filter: blur(2px); /* For Safari */
+  
+}
+
+#artwork-section {
+  background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.2)), url("artwork/IMG_4499.jpg");
+  
+  
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+}
+
+/* #mission-image {
+  vertical-align: center;
+} */
+
+/* #paragraph {
+  margin: auto 50px;
+} */
+
+#footer-icons {
+  margin-right: 20px;
+  transition-duration: .2s;
+}
+
+#span-uniquifier span {
+  margin-left: 20px;
+}
+
+
+#footer-icons:hover i {
+  color: gold;
+}
+
+footer {
+  padding: 0;
+  margin: 0;
+}
+
+#skills-section {
+  background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.2)),
+    linear-gradient(rgba(37, 36, 48, 0), rgba(30, 2, 23, 1));
+  color: gold;
+  font-weight: 50;
+  padding-bottom: 100px;
+}
+
+#skills-section .about__title{
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.about__title {
+  font-size: 50px;
+  text-align: center;
+}
+
+
+/* .about__row {
+  display: flex;
+  justify-content: space-between;
+} */
+/* Since we're using boostrap, we don't need these CSS */
+/* .about__column {
+  flex: 1;
+  margin: 0 25px;
+  border: dashed 2px;
+  border-color: rgba(255, 0, 0, .3);
+  border-radius: 15px;
+  padding: 20px 5px;
+} */
+
+.about__column h3 {
+  font-size: 60px;
+}
+
+/* .x {
+  background-color: red;
+}
+
+.y {
+  background-color: orange;
+} */
+
+.tape-effect {
+  float: none; /* Choose if image will float to the right or left */
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+  max-width: 400px;
+  margin-left: 10px;
+  position: relative;
+  margin-right: 0px;
+  transition: transform 0.2s;
+}
+
+
+.tape-effect:hover {
+  transform: scale(1.3);
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: inline-start;
+  z-index: 100;
+  padding: 3px;
+}
+
+.white-text {
+  color: white
+  
+}
+
+#paragraph {
+  text-shadow: 0px 1px 2px red;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.navbar {
+
+  padding-top: 5px !important;
+
+  padding-bottom: 5px !important;
+
+}
+
+.rotate {
+  transform: rotate(-2deg);
+}
+
+.rotateR {
+  transform: rotate(1deg);
+}
+
+.rotateL {
+  transform: rotate(-0.9deg);
+}
+
+/* The css below makes the edge of the skills div fade in to the artwork div (I, mean, not exact but it's still one way to do it lol)
+ */
+#skills-section {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("artwork/IMG_4499.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px; /* Adjust as needed */
+  padding-bottom: 50px; /* Adjust as needed */
+}
+
+video {
+  width: 106%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  backdrop-filter: blur(2px); /* Adjust the blur radius as needed */
+  -webkit-backdrop-filter: blur(2px); /* For Safari */
+  box-shadow: 10px 10px 9px #130f28;
+  border: solid 2px #ffd300
+}
